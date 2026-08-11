@@ -1,9 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 export default function App() {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>Programação para Dispositivos Móveis</Text>
       <Text>Olá, Kauã!</Text>
       <Text>Meu segundo passo com Expo e React Native</Text>
