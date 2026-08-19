@@ -47,10 +47,10 @@ export default function App() {
 
             <Pressable
               style={({ pressed }) => [
-              styles.button,
-              pressed && styles.buttonPressed,
-            ]}
->
+                styles.button,
+                pressed && styles.buttonPressed,
+              ]}
+            >
               <Text style={styles.buttonText}>
                 {ADD_BUTTON}
               </Text>
@@ -60,7 +60,7 @@ export default function App() {
 
           <View style={styles.switchRow}>
             <Text style={styles.switchText}>
-               Mostrar apenas obrigatórias
+              Mostrar apenas obrigatórias
             </Text>
 
             <Switch />
@@ -109,6 +109,7 @@ const styles = StyleSheet.create({
 
   inputRow: {
     flexDirection: 'row',
+    // Centraliza verticalmente o input e o botão na mesma linha.
     alignItems: 'center',
     marginBottom: 25,
   },
@@ -127,6 +128,7 @@ const styles = StyleSheet.create({
     padding: 12,
     borderRadius: 8,
     backgroundColor: '#ddd',
+    // Centraliza o texto do botão horizontal e verticalmente.
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -136,8 +138,8 @@ const styles = StyleSheet.create({
   },
 
   buttonPressed: {
-  opacity: 0.6,
-},
+    opacity: 0.6,
+  },
 
   listTitle: {
     fontSize: 22,
@@ -157,13 +159,15 @@ const styles = StyleSheet.create({
   },
 
   switchRow: {
-  flexDirection: 'row',
-  alignItems: 'center',
-  justifyContent: 'space-between',
-  marginBottom: 20,
-},
+    flexDirection: 'row',
+    // Alinha verticalmente o texto e o Switch.
+    alignItems: 'center',
+    // Mantém o texto à esquerda e o Switch à direita.
+    justifyContent: 'space-between',
+    marginBottom: 20,
+  },
 
-switchText: {
-  fontSize: 16,
-},
+  switchText: {
+    fontSize: 16,
+  },
 });
