@@ -186,15 +186,15 @@ Também foram utilizados blocos `try/catch` para apresentar mensagens amigáveis
 
 ### Tela vazia
 
-<!-- Inserir aqui o print da tela sem compromissos -->
+![Tela inicial](screenshots/telaVazia.png)
 
 ### Tela com compromissos
 
-<!-- Inserir aqui o print da tela com compromissos cadastrados -->
+![Atividades cadastradas](screenshots/telaAtividades.png)
 
 ### Após reabrir o aplicativo
 
-<!-- Inserir aqui o print comprovando que os compromissos permaneceram salvos -->
+![Aplicação após reiniciar](screenshots/telaReiniciada.png)
 
 ## Conteúdos das aulas aplicados
 
