@@ -70,7 +70,7 @@ Também foram utilizados valores em **porcentagem (%)** e **flex** para tornar o
 A tela foi estruturada utilizando:
 
 - `flexDirection: 'row'` para manter o campo de entrada e o botão na mesma linha;
-- `width: '70%'` no campo de entrada;
+- `width: '75%'` no campo de entrada;
 - `flex: 1` no botão para ocupar o espaço restante;
 - `justifyContent` e `alignItems` para alinhamento dos elementos;
 - `flex: 1` no container principal para ocupar o espaço disponível da tela.
