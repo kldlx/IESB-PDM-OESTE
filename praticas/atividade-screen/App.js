@@ -15,16 +15,29 @@ function BottomTabScreen() {
   return (
     <Tab.Navigator
       screenOptions={({ navigation }) => ({
+        headerStyle: {
+          backgroundColor: '#2563EB',
+        },
+        headerTintColor: '#FFFFFF',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
         headerRight: () => (
           <IconButton
             icon="add-circle-outline"
             size={28}
-            color="#000"
+            color="#FFFFFF"
             onPress={() => navigation.navigate('GerenciarDespesa')}
           />
         ),
         headerRightContainerStyle: {
           paddingRight: 15,
+        },
+        tabBarActiveTintColor: '#2563EB',
+        tabBarInactiveTintColor: '#64748B',
+        tabBarStyle: {
+          backgroundColor: '#FFFFFF',
+          borderTopColor: '#E2E8F0',
         },
         tabBarLabelStyle: {
           fontSize: 12,
@@ -71,6 +84,16 @@ export default function App() {
         <Stack.Screen
           name="GerenciarDespesa"
           component={GerenciarDespesa}
+          options={{
+            title: 'Gerenciar Despesa',
+            headerStyle: {
+              backgroundColor: '#2563EB',
+            },
+            headerTintColor: '#FFFFFF',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+          }}
         />
       </Stack.Navigator>
     </NavigationContainer>
